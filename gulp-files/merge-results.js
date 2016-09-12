@@ -1,6 +1,3 @@
-/**
- * Created by Pratik on 8/5/2016.
- */
 
 var _ = require('lodash');
 
