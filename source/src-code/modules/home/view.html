@@ -1,0 +1,22 @@
+<div class="home-page">
+    <div class="search-box">
+        <h1 class="h1 text-center">Who What Where</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 col-xl-5 top-mar">
+                <input class="form-control" type="text" placeholder="What do you want?" ng-model="query"/>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 col-xl-5 top-mar">
+                <input class="form-control" type="text" placeholder="From which city?" ng-model="location"/>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 top-mar">
+                <button class="btn btn-primary" ng-click="search()"><span class="glyphicon glyphicon-search"></span>
+                </button>
+            </div>
+        </div>
+       <!-- <div class="top-mar" ng-show="hasLocation">
+            <button class="btn btn-primary" ng-click="nearme()"><span class="glyphicon glyphicon-screenshot"></span>
+                Near Me
+            </button>
+        </div>
+-->    </div>
+</div>
