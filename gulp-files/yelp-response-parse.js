@@ -1,6 +1,3 @@
-/**
- * Created by M047 on 8/4/2016.
- */
 
 module.exports = function (data) {
     var parsed = [];
