@@ -16,9 +16,9 @@ export default function ($stateProvider, $urlRouterProvider) {
             controller: homeControl,
         })
         .state('results', {
-    url: '/business',
-    templateUrl: resultView,
-    controller: resultControl,
-});
+            url: '/business',
+            templateUrl: resultView,
+            controller: resultControl,
+        });
 
 }
