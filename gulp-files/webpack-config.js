@@ -1,8 +1,4 @@
-/**
- * Created by Pratik on 6/28/2016.
- *
- * configuration file for webpack.
- */
+
  var path = require('path');
  var ExtractTextPlugin = require('extract-text-webpack-plugin');
  var webpack = require('webpack');
