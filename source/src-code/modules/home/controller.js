@@ -25,12 +25,6 @@ export default function ($scope, $rootScope, $state) {
         }
     }
 
-    $scope.nearme = function () {
-        navigator.geolocation.getCurrentPosition(onPositionUpdate,
-                                         onErrorLocation,
-                                         {enableHighAccuracy:true, timeout:10000, maximumAge:600000});
-    };
-
     $scope.search = function () {
         sendData(false);
     };
@@ -41,7 +35,7 @@ export default function ($scope, $rootScope, $state) {
             location: $scope.location,
             isCoordinates: isCoordinates
         };
-        
+
         $state.go('results');
     }
 }

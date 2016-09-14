@@ -68,11 +68,12 @@ export default function ($scope, $http, $rootScope, $state) {
     }
 
     $http.post('/getdata', $rootScope.data).then(function (resp) {
+        console.log('resp',resp);
         if(resp.data instanceof Array && resp.data.length > 0){
             loadMap(resp.data[0].cords);
             for (var i = 0; i < resp.data.length; i++) {
                 var business = resp.data[i];
-
+                $scope.listData = resp.data;
                 var _marker = {
                     position: new window.mapObj.LatLng(business.cords.lat, business.cords.lon),
                     title: business.name,
