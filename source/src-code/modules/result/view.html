@@ -1,15 +1,16 @@
 <div class="map-container">
 
-    <div class="list-cls col-xs-4 col-md-4 col-sm-4 col-lg-4 col-xl-4" style="overflow-y: auto">
+    <div class="list-cls col-xs-4 col-md-4 col-sm-4 col-lg-4 col-xl-4" style="overflow-y: auto;height: 100%;">
         <div ng-repeat="list in listData track by $index" class="row  item-detail list-item-cls result-{{$index}}"
              ng-show="listData.length > 0">
             <div class="img-div">
-                <img ng-src="{{list.photo}}" height="100px" width="100px" class="set-img img-responsive">
+                <img ng-src="{{list.photo}}" height="150px" width="150px" class="set-img img-rounded img-responsive">
             </div>
             <div class="info-div">
                 <div ng-click="(list.url)"><span
                         class="info-col-1 col-xs-4 col-md-4 col-sm-4 col-lg-4 col-xl-4 ">Name:</span> <span
-                        class="info-col-2 col-xs-8 col-md-8 col-sm-8 col-lg-8 col-xl-8">{{list.name}}</span></div>
+                        class="info-col-2 col-xs-8 col-md-8 col-sm-8 col-lg-8 col-xl-8">
+                    <a ng-if="list.url !== 'NA'" target="_blank" href="{{list.url}}">{{ list.name }}</a></span></div>
                 <div ng-show="list.phone==='NA'?false:true"><span
                         class="info-col-1 col-xs-4 col-md-4 col-sm-4 col-lg-4 col-xl-4 ">Phone:</span> <span
                         class="info-col-2 col-xs-8 col-md-8 col-sm-8 col-lg-8 col-xl-8">{{list.phone}}</span></div>

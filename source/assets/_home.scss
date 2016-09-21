@@ -10,8 +10,7 @@ body {
   background-image: -moz-linear-gradient(top, #82f566,#7eeee4);
   background-image: -o-linear-gradient(top, #82f566,#7eeee4);
   font-family: 'aventura', 'Droid Sans', sans-serif;
-  font-size: 1rem;
-  *zoom: 1;
+  font-size: 2rem;
   height: 100%;
 
   a {
@@ -38,8 +37,8 @@ body {
   color: #e1f111;
 
   &:hover {
-   color: #17c317;
- }
+    color: #17c317;
+  }
 }
 
 .home-page {
@@ -51,23 +50,23 @@ body {
   }
 
   .search-box {
-    background: #000000;
+    background: #E75480;
     color: #EEE8D5;
     width: 45%;
     min-width: 230px;
     margin: 0 auto;
     margin-top: 30px;
     border-radius: 20px;
-    padding: 20px 30px;
+    padding: 50px 50px;
     z-index: 20;
 
     h1 {
       font-family: 'Arial Black', 'Gadget', sans-serif;
-      color:#ff6600;
+      color:#000000;
     }
 
     input {
-      font-size: 1rem;
+      font-size: 2rem;
       border-radius: 10px;
 
       &[type="text"] {
@@ -86,4 +85,5 @@ body {
       }
     }
   }
+
 }
