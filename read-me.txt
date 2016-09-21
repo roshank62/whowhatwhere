@@ -16,7 +16,6 @@ A business search application built on the top of yelp,foursquare and google map
 
 *How to use
 	-enter your query to search for business and location where you want to search;
-	-you can use nearme feature to search near by to you.(you need modern browser for this)
 	-you will get results pinned on map,on clicking on them you will get details of the business.
 
 *Platforms

@@ -3,8 +3,6 @@ export default function ($scope, $rootScope, $state) {
 
     $scope.query = null;
     $scope.location = null;
-    /*check for geolocation service*/
-    $scope.hasLocation = navigator.geolocation;
 
     function onPositionUpdate(position) {
         var lati = position.coords.latitude;
@@ -18,7 +16,6 @@ export default function ($scope, $rootScope, $state) {
             }
         }
     }
-
     function onErrorLocation(error){
         if(window.alert){
             alert('Unable to get location data, Please enter valid location');
