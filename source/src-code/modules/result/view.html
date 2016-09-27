@@ -4,7 +4,7 @@
         <div ng-repeat="list in listData track by $index" class="row  item-detail list-item-cls result-{{$index}}"
              ng-show="listData.length > 0">
             <div class="img-div">
-                <img ng-src="{{list.photo}}" height="150px" width="150px" class="set-img img-rounded img-responsive">
+                <img ng-src="{{list.photo}}" height="150px" width="150px" class="set-img img-rounded img-responsive pull-left">
             </div>
             <div class="info-div">
                 <div ng-click="(list.url)"><span
@@ -28,6 +28,6 @@
         <div ng-show="listData.length > 0">{{listData.length}} records found</div>
     </div>
 
-    <div id="map" class="col-xs-8 col-md-8 col-sm-8 col-lg-8 col-xl-8" style="height: 100%"></div>
+    <div id="map" class="col-xs-8 col-md-8 col-sm-8 col-lg-8 col-xl-8" style="overflow-y: auto;height: 100%"></div>
 
 </div>

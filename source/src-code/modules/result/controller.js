@@ -36,7 +36,7 @@ export default function ($scope, $http, $rootScope, $state) {
         });
 
         var infowindow = new window.mapObj.InfoWindow({
-            content: feature.title
+            content: feature.title +' '+feature.rating,
         });
 
         marker.addListener('mouseover', function () {
@@ -77,6 +77,7 @@ export default function ($scope, $http, $rootScope, $state) {
                 var _marker = {
                     position: new window.mapObj.LatLng(business.cords.lat, business.cords.lon),
                     title: business.name,
+                    rating:business.rating,
                     data: business
                 };
 
